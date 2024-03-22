@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(realmadrid.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* CSS untuk mengatur konten di tengah halaman */
+.bg-text {
+  background-color: rgb(51, 54, 62); /* Fallback color */
+  background-color: rgba(51, 54, 62); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  animation: fadeIn 4s ease forwards; /* Animasi fadeIn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  color: transparent;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  animation: fadeIn 2s ease forwards; /* Animasi fadeIn */
+  background-color: rgb(51, 54, 62);
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #fff; /* Ubah warna teks saat muncul */
+  }
+}
+
+.gambar-container {
+  display: flex;
+  align-items: flex-end; /* Posisikan gambar di bagian bawah container */
+  justify-content: center;
+  flex-grow: 1;
+  margin-bottom: 5px; /* Tambahkan jarak di bawah gambar-container */
+}
+
+/* CSS untuk gambar */
+.gambar {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.judul {
+  position: absolute; /* Menggunakan posisi tetap untuk tetap menjaga elemen di atas */
+  /* Properti lainnya */
+  top: 10px; /* Atur jarak dari atas sesuai kebutuhan */
+  bottom: auto; /* Hapus bottom agar tidak mengganggu */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(51, 54, 62);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi untuk latar belakang dan warna teks */
+  margin-top: 5px; /* Tambahkan jarak di atas tombol */
+}
+
+button:hover {
+  background-color: rgb(51, 54, 62); /* Warna latar belakang saat dihover */
+  color: rgb(255, 255, 255); /* Warna teks saat dihover */
+}
